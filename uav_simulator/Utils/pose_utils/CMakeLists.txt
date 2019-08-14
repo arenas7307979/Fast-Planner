@@ -21,6 +21,7 @@ include_directories(
     include
     )
 
-add_library(pose_utils 
+add_library(pose_utils
    ${ARMADILLO_LIBRARIES}
    src/pose_utils.cpp)
+

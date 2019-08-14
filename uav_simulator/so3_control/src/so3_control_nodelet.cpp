@@ -1,4 +1,4 @@
-#include <Eigen/Geometry>
+	#include <Eigen/Geometry>
 #include <nav_msgs/Odometry.h>
 #include <nodelet/nodelet.h>
 #include <quadrotor_msgs/Corrections.h>
@@ -214,5 +214,8 @@ SO3ControlNodelet::onInit(void)
 }
 
 #include <pluginlib/class_list_macros.h>
-PLUGINLIB_DECLARE_CLASS(so3_control, SO3ControlNodelet, SO3ControlNodelet,
-                        nodelet::Nodelet);
+//for under ubuntu18.04
+//PLUGINLIB_DECLARE_CLASS(so3_control, SO3ControlNodelet, SO3ControlNodelet, nodelet::Nodelet);
+
+//for under ubuntu18.04
+PLUGINLIB_EXPORT_CLASS(SO3ControlNodelet, nodelet::Nodelet);
